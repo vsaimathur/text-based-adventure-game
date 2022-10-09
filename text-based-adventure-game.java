@@ -146,12 +146,7 @@ public class TextBasedAdventure {
         System.out.println("GAME OVER!");
         System.exit(0); // terminates if lost
     }
-
-    /**
-     * @param args
-     *            the command line arguments
-     * @throws java.lang.InterruptedException
-     */
+    
     public static void main(String[] args) throws InterruptedException {
         maxHP = 20;
         potion = 3;
