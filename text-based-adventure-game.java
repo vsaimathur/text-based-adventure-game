@@ -9,7 +9,7 @@ public class TextBasedAdventure {
     public static int maxHP;
     public static int xp;
     public static int atk;
-    public static int def;
+    public static int defence;
     public static int lvl;
     public static int potion;
     static Random rand = new Random();
@@ -57,10 +57,10 @@ public class TextBasedAdventure {
         if (hpskel <= 0) {
             System.out.println("You Defeated A Skeleton");
             atk = atk + 1;
-            def = def + 1;
+            defence = defence + 1;
             maxHP = maxHP + 1;
 
-            System.out.format("You Have Leveled Up! atk is now %d, def is now %d, HP is now %d", atk, def, HP);
+            System.out.format("You Have Leveled Up! atk is now %d, defence is now %d, HP is now %d", atk, defence, HP);
             System.out.println("");
             return;
         }
@@ -106,9 +106,9 @@ public class TextBasedAdventure {
         if (hpzomb <= 0) {
             System.out.println("You Defeated A Zombie");
             atk = atk + 1;
-            def = def + 1;
+            defence = defence + 1;
             maxHP = maxHP + 1;
-            System.out.format("You Have Leveled Up! atk is now %d, def is now %d, HP is now %d", atk, def, HP);
+            System.out.format("You Have Leveled Up! atk is now %d, defence is now %d, HP is now %d", atk, defence, HP);
             System.out.println("");
             return;
         }
@@ -169,7 +169,7 @@ public class TextBasedAdventure {
         System.out.println("ARE YOU READY BRAVE ADVENTURER");
         HP = maxHP;
         lvl = 1;
-        def = 1;
+        defence = 1;
         atk = 1;
         Thread.sleep(5000);
         StartRoom();
